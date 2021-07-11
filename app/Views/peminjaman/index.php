@@ -86,10 +86,10 @@
                                                     <input type="number" hidden class="sr-only" name="denda" value="<?= $item['denda']; ?>">
 
                                                     <!-- Modal Button -->
-                                                    <button type="button" class="btn btn-sm btn-icon btn-primary" data-toggle="modal" data-target="#updatePeminjaman" data-whatever="@getbootstrap"><i class="mr-2" data-feather="check-square"></i>Ubah Status</button>
+                                                    <button type="button" class="btn btn-sm btn-icon btn-primary" data-toggle="modal" data-target="#updatePeminjaman<?= $item['id_pinjam']; ?>" data-whatever="@getbootstrap"><i class="mr-2" data-feather="check-square"></i>Ubah Status</button>
 
                                                     <!-- Modal  -->
-                                                    <div class="modal fade" id="updatePeminjaman" tabindex="-1" role="dialog" aria-labelledby="updatePeminjamanLabel" aria-hidden="true">
+                                                    <div class="modal fade" id="updatePeminjaman<?= $item['id_pinjam']; ?>" tabindex="-1" role="dialog" aria-labelledby="updatePeminjamanLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered" role="document">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
